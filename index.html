@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chad Beebe - Home</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1ca9bffa4a.js"></script>
+  <style type="text/css">
+    .active {
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body style="background-color:#111">
+
+  <div class="container">
+    <h1 style="color:white">Podonk Middle School Band</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(100, 0, 0)">
+      <a class="navbar-brand" style="color:white" href="#">Podonk</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link active dropdown-toggle" style="color:#aaa" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="about" class="dropdown-item" href="#" onclick="showAbout()">About</a>
+              <a id="ensembles" class="dropdown-item" href="#" onclick="showEnsembles()">Ensembles</a>
+              <a id="directors" class="dropdown-item" href="#" onclick="showDirectors()">Directors</a>
+            </div>
+          </li>
+          <li class="nav-item mx-4">
+            <a id="lessons" class="nav-link" style="color:#aaa" href="#" onclick="showLessons()">Lessons</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a id="resources" class="nav-link" style="color:#aaa" href="#" onclick="showResources()">Resources</a>
+          </li>
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link dropdown-toggle" style="color:#aaa" href="#" id="futureDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Future Members
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="futureInfo" class="dropdown-item" href="#" onclick="showFutureMembers()">Member Info</a>
+              <a id="guide" class="dropdown-item" href="#" onclick="showGuide()">Plan Guide</a>
+            </div>
+          </li>
+          <li class="nav-item mx-4">
+            <a id="highschool" class="nav-link" style="color:#aaa" href="#" onclick="showHighschool()">High School Band</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a id="calender" class="nav-link" style="color:#aaa" href="#" onclick="showCalender()">Calender</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="aboutContent" class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <p style="font-size:16px; color:white">
+                  The Podunk East Middle School Band currently has 300 members and possess six
+                  award-winning ensembles, including our Wind Ensemble, Symphonic Band, Concert Band, Jazz Band,
+                  Indoor Drumline, and prestigious beginner program, which have received some of the highest honors
+                  in the nation. Since our inception in 1998, the Podunk East Band has fostered traditions of excellence,
+                  musicianship, and innovation. The band program is the largest fine arts elective and spirit organization
+                  on campus. Our musicians get the chance to perform at concerts, pep rallies, football games,
+                  elementary schools, and throughout the community.
+                </p>
+              </div>
+            </div>
+
+            <h3 style="color:white">Courses</h3>
+            <div class="row" style="margin-bottom:10%">
+              <div class="col-lg-2">
+                <div style="padding:1%; background-color:rgb(100, 0, 0); text-align:center; border-radius:4px; color:white">
+                  <h4>2nd Period</h4>
+                  <h5>Wind Ensemble</h5>
+                  <h5>9:00-9:50 A.M.</h5>
+                  <h5>Instructor: Rick Sanchez</h5>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div style="padding:1%; background-color:rgb(100, 0, 0); text-align:center; border-radius:4px; color:white">
+                  <h4>3rd Period</h4>
+                  <h5>Concert Band</h5>
+                  <h5>11:00-11:50 A.M.</h5>
+                  <h5>Instructor: BoJack Horseman</h5>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div style="padding:1%; background-color:rgb(100, 0, 0); text-align:center; border-radius:4px; color:white">
+                  <h4>5th Period</h4>
+                  <h5>Percussion Ensemble</h5>
+                  <h5>1:00-1:50 A.M.</h5>
+                  <h5>Instructor: Chad Beebe</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ensemblesContent" class="container" style="display:none; color:white">
+            <h4>2nd Period - Wind Ensemble</h4>
+            <p>
+              The Wind Ensemble is the advanced (varsity) band in the Podonk East Middle School program.  Students will prepare/perform an advanced music curriculum and have a strong commitment to rehearsal and individual practice time.
+              Private lessons are strongly recommended.  Membership in this organization is by audition and selection by the directors.  Audition materials regularly include All-Region Etudes, scales, and sight-reading.  The Wind Ensemble meets 2nd Period.
+              Membership carries the following responsibilities:<br /><br />
+              1.     Attendance at all rehearsals, sectionals, clinics, and performances.<br />
+              2.     Preparation of All-Region Band music during Fall Semester.<br />
+              3.     Audition for All-Region Band or Orchestra.<br />
+              4.     Participate in PISD Solo and Ensemble Contest in a solo capacity.<br />
+              5.     Performance of prepared music designated to strengthen the proficiency of the student.<br />
+              6.     Performance of concert music assigned by the directors.<br />
+              7.     Maintain academic eligibility.<br />
+              8.     Abide by all Podonk East Band Handbook policies.<br />
+            </p>
+              <br />
+              <br />
+            <h4>3rd Period - Concert Band</h4>
+            <p>
+              The Concert Band is the intermediate (non-varsity) ensemble, and is open to all Podonk East Band students.  Membership is determined by audition.  Concert Band students will prepare and perform music for concerts and competitions. The Concert Band meet  Period.  Private lessons are strongly recommended.  Membership carries the following responsibilities:<br /><br />
+              1.     Attendance at all rehearsals, sectionals, clinics, and performances.<br />
+              2.     Preparation of All-Region music during Fall Semester<br />
+              3.     Participation in PISD Solo and Ensemble Contest.<br />
+              4.     Performance of prepared music designed to strengthen the proficiency of the student.<br />
+              5.     Performance of contest music assigned by the directors.<br />
+              6.     Maintain academic eligibility.<br />
+              7.     Abide by all Podonk East Band Handbook policies.<br />
+            </p>
+            <br />
+            <br />
+            <h4>5th Period - Percussion Ensemble</h4>
+            <p>
+              The Percussion Ensemble is open to selected Podonk East Middle School Band students by audition and approval by the directors.  Percussion Ensemble is the designation for all percussion during the Fall Semester and meets 1st Period.  All Percussion Ensemble students must maintain membership in the Wind Ensemble or the Concert Band.  Percussion Ensemble may compete as a separate ensemble at the discretion of the directors.  Membership carries the following responsibilities:<br /><br />
+              1.     Attendance at all rehearsals, sectionals, clinics, and performances.<br />
+              2.     Enrollment in Wind Ensemble (1st Period) or Concert Band.<br />
+              3.     Satisfactory performance of the materials assigned for performance and/or competition.<br />
+              4.     Maintain academic eligibility.<br />
+              5.     Abide by all Podonk East Band Handbook policies.<br />
+            </p>
+          </div>
+
+          <div id="directorsContent" class="container" style="display:none; color:white">
+            <h3 style="color:white">Staff</h3>
+            <div class="row" style="margin-bottom:3%">
+              <div class="col-lg-2" style="color:white">
+                <img src="rickAvatar.png" alt="Avatar" height="100px" width="100px"/>
+                <h4><b>Rick Sanchez</b></h4>
+                <h5><b>Band Director</b></h5>
+              </div>
+              <div class="col-lg-5" style="color:white">
+                <p>
+                  Rick Sanchez is the Director of Bands at Podonk East Middle School.  During his tenure, the bands at Podonk East
+                  have received local, national, and international acknowledgements in concert band. Most recently the Podonk East Wind Ensemble
+                  placed 2nd in the Texas State Honor Band Competition.  This marks the 30th consecutive year that the Wind Ensemble has
+                  placed in the top 4. In the spring of 2015, the Flower Mound Wind Symphony was invited to perform at the 69th
+                  Annual Midwest International Band and Orchestra Clinic.
+                  <br />
+                  <br />
+                  Rick lives in Podonk with his daughter and her husband,
+                  while going on miscellaneous adventures with his grandkids. His hobbies including chemistry and dabbling in mechanics.
+                </p>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:3%">
+              <div class="col-lg-2" style="color:white">
+                <img src="bojackAvatar.png" alt="Avatar" height="100px" width="100px"/>
+                <h4><b>BoJack Horseman</b></h4>
+                <h5><b>Associate Director</b></h5>
+              </div>
+              <div class="col-lg-5" style="color:white">
+                <p>
+                  BoJack Horseman was named Associate Director of Bands at Podonk East Middle School in June of 2009.
+                  Prior to his appointment at Podonk. Mr. Horseman served as the Associate Director of Bands at Wapakoneta High School
+                  in Wapakoneta, Ohio.
+                  <br /><br />
+                  Bands under the direction of Mr. Horseman have received consistent Sweepstakes Awards in
+                  University Interscholastic League competition for Marching, Concert Performance, and Sight Reading.  In 2004, Mr. Horseman
+                  was named as Stark High School's "Teacher of the Year" and honored by the PTA with the life membership award.
+                  In 2005, Mr. Horseman was selected for induction into the American School Band Directors Association, which honors outstanding
+                  band directors  in the United States.
+                  <br /><br />
+                  His professional affiliations include the Texas Music Educators Association,
+                  Texas Bandmasters Association, Texas Music Adjudicators Association, Tau Beta Sigma and Phi Beta Mu International Band Fraternity.
+                  Mr. Horseman maintains an active schedule as a clinician and adjudicator. He holds the Bachelor of Music Education degree
+                  from the University of North Texas and a Master of Music Education from the University of American Samoa.
+                </p>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom:3%">
+              <div class="col-lg-2" style="color:white">
+                <img src="chadAvatar.jpg" alt="Avatar" height="100px" width="100px"/>
+                <h4><b>Chad Beebe</b></h4>
+                <h5><b>Percussion Director</b></h5>
+              </div>
+              <div class="col-lg-5" style="color:white">
+                <p>
+                  Chad Beebe is excited to join the incredible band staff and community at Podunk East Middle School.
+                  Prior to his appointment at Podunk East, he served as the Director of Percussion for the Fictional Valley School District
+                  from 1998 – 2019. At Grain Valley, he directed three high school percussion ensemble classes; the Marching Wunderpus
+                  Photogenicus Drumline; chamber ensembles; and 6th, 7th, and 8th grade percussion classes.
+                  <br /><br />
+                  Under his direction, the FVHS Percussion Ensemble and Drumline garnered national acclaim for both their performance
+                  quality and professionalism.
+                  The Fictional Valley Marching Wunderpus Photogenicushave earned a Finalist placement at the BOA Grand Nationals.
+                  In 2016 the Fictional Valley HS Percussion Ensemble was selected to perform at the Music for All National Percussion Festival
+                  in 2015 and 2017.
+                  <br /><br />
+                  Mr. Beebe earned his Master of Arts in Music Education from Collin Community College and his Bachelor of
+                  Music Education from the University of North Texas. Mr. Beebe is the immediate Past President for the Xibalba Chapter of
+                  the Percussive Arts Society and he is an Educational Artist for Innovative Percussion. Mr. Beebe looks forward to moving
+                  to Podonk with his dog Fear and cat Crippling Anxiety.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="lessonContent" class="container" style="display:none">
+            <h3 style="color:white">Private Lessons</h3>
+            <p style="color:white">
+              Private lessons are an important part of every successful band program. We highly encourage all our students
+              to enroll in personal training if possible. Sessions can be held before or after school or during your child’s band class.
+              They are typically half of the class period in length. The cost per lesson is currently $18. Students are taught one on one
+              with a specialist that plays the same instrument as them. A list of lesson teachers is provided below with their contact
+              information. Financial assistance is available for those who qualify for free or reduced lunch. Please contact them directly
+              for scheduling.
+            </p>
+            <div class="row">
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Flute</b></h4>
+                  <h5>Candy Diamond</h5>
+                  <h5>322-430-8430</h5>
+                  <h5>candia@gmoil.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                <h4><b>Oboe</b></h4>
+                <h5>Steven Universe</h5>
+                <h5>crystalgems@gmoil.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Bassoon</b></h4>
+                  <h5>Leroy Jenkins</h5>
+                  <h5>632-859-0187</h5>
+                  <h5>leeroyjenkins@gmoil.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Clarinet</b></h4>
+                  <h5>Max Maxwell</h5>
+                  <h5>000-111-2222</h5>
+                  <h5>maxmaxmax@verizon.net</h5>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Saxophone</b></h4>
+                  <h5>Jefferson Jackson</h5>
+                  <h5>999-999-9999</h5>
+                  <h5>jeffjackjeff@outlook.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Trumpet</b></h4>
+                  <h5>Generic G. Guy</h5>
+                  <h5>firstname@gmail.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Horn</b></h4>
+                  <h5>Cthulhu Johnson</h5>
+                  <h5>782-543-1982</h5>
+                  <h5>lovecraft@gmack.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Trombone</b></h4>
+                  <h5>Dr. Samuel Oak</h5>
+                  <h5>578-284-8194</h5>
+                  <h5>pokemondude@hotmail.com</h5>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Trombone</b></h4>
+                  <h5>Matt Matthews</h5>
+                  <h5>jfidsaa@why.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Trombone</b></h4>
+                  <h5>Sonic H. Hog</h5>
+                  <h5>583-838-1832</h5>
+                  <h5>justwannafinish@gmoil.com</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Euphonium</b></h4>
+                  <h5>Dio Brando</h5>
+                  <h5>346-346-3463</h5>
+                  <h5>Dio@dio.dio</h5>
+              </div>
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Tuba</b></h4>
+                  <h5>Hubert Wolf</h5>
+                  <h5>892-541-5632</h5>
+                  <h5>hwolf@gmoil.com</h5>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-3" style="color:white">
+                  <h4><b>Percussion</b></h4>
+                  <h5>Linda Allmon</h5>
+                  <h5>510-143-5015</h5>
+                  <h5>lindaallmon@gmoil.com</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="resourcesContent" class="container" style="display:none; color:white">
+            <div class="row">
+              <div class="col-lg-12">
+                <embed src="BandHandbook.pdf" type="application/pdf" width="100%" height="600px" />
+              </div>
+            </div>
+            <br /><br />
+            <h4>Helpful Websites:</h4><br />
+            <p>
+              <a href="https://www.penders.com/">https://www.penders.com/</a><br />
+              Penders Music<br />
+              A music store located in Denton,TX that stocks printed music.<br /><br />
+
+              <a href="https://www.jwpepper.com/sheet-music/welcome.jsp">https://www.jwpepper.com/sheet-music/welcome.jsp</a><br />
+              JW Pepper Music<br />
+              A sheet music store located in Ft. Worth that carries printed music.<br /><br />
+
+              <a href="https://www.musicarts.com/">https://www.musicarts.com/</a><br />
+              Music & ArtsMusic Instruments & Accessories<br />
+              A retail store that carries many of the items on the Rogers MS Band Instrument Recommendation list.<br /><br />
+
+              <a href="https://www.wm1st.com/">https://www.wm1st.com/</a><br />
+              Williamson MusicMusic Instruments & Accessories<br />
+              A retail store that carries many of the items on the Rogers MS Band Instrument Recommendation list.<br /><br />
+
+              <a href="http://www.brookmays.com/">http://www.brookmays.com/</a><br />
+              Brook MaysMusic Instruments & Accessories<br />
+              A retail store that carries many of the items on the Rogers MS Band Instrument Recommendation list.<br /><br />
+
+              <a href="https://www.teachingfiles.co.uk/namethatnote2.htm">https://www.teachingfiles.co.uk/namethatnote2.htm</a><br />
+              Name That NoteMusic Theory Lessons<br />
+              A fun interactive online game focussing on note naming skills<br /><br />
+            </p>
+          </div>
+
+          <div id="futureMembersContent" class="container" style="display:none">
+            <h2 style="color:white">ARE YOU GOING TO BE A 6TH GRADER AT PODONK EAST MIDDLE SCHOOL NEXT YEAR?</h2>
+            <br /><br />
+            <p style="color:white">
+              We want you to join the Podonk East Band! Playing in middle school band develops good discipline, a sense of teamwork, and a lifelong love of music.
+              <br /><br />
+              Here are some frequently asked questions about being in band...<br /><br />
+              Do I need to have experience playing a musical instrument to join the band?<br /><br />
+              NO! While it's certainly helpful to have experience, particularly taking piano lessons, you do NOT need to have played an instrument before.<br /><br />
+              What instruments can I play in 6th grade band?<br /><br />
+              You will be able to choose from flute, oboe, bassoon, clarinet, alto saxophone, trumpet, french horn, trombone, euphonium, tuba, or percussion.<br /><br />
+              How do I make my decision about what instrument I will play?<br /><br />
+              The band directors will help you try out each instrument. Then we will discuss what instruments you could play with success and what choices interest you.<br /><br />
+              How do I sign up for band on my schedule?<br /><br />
+              Request "BAND" on your course card for the PEMS counselors, who will set up your schedule for next year. Band is a Fine Arts class, and each student must be enrolled in a Fine Arts class each year.<br /><br />
+              Are some instruments harder than others?<br /><br />
+              NO! But different physical features in your face and hands can affect how well YOU could play something. The shape of your lips, the structure of your teeth, and your overall size all can play a part.
+              The band directors will help identify these sorts of characteristics to be sure you play an instrument on which you will have fun AND be successful!<br /><br />
+              Does it cost money to be in band?<br /><br />
+              All the fine arts classes at Podonk East have a fee. Ours covers the cost of your band shirts, your complete band binder, your method and theory books, music, transportation and entry fees for festivals and trips, and much more.<br /><br />
+              Are there ways to fundraise for my band fee?<br /><br />
+              YES! We try to offer as many opportunities to fundraise as possible. If you participate in fundraisers, it's possible to raise ALL of the money that you need for band.<br /><br />
+              Do band students get to go on field trips?<br /><br />
+              YES! Our band students get to attend special festivals and contests for performances, as well as trips to reward your hard work in band. In the past, the band has gone to Sandy Lake Amusement Park, NRH2O, Hawaiian Falls, Six Flags, iTZ, and more!<br /><br />
+              Where can I get my instrument and supplies?<br />
+              At any of these music stores:<br /><br />
+              <b>Music & Arts<br />
+              360 E FM 3040 Suite 820<br />
+              Podonk, TX 79867<br />
+              (972) 315-8400<br />
+              http://www.musicarts.com<br /></b>
+              <br /><br />
+              <b>Music 1st<br />
+              6807 W. Main St.<br />
+              Nowhere, TX 79999<br />
+              (469) 362-7171<br />
+              http://www.wm1st.com/<br /></b>
+              <br /><br />
+              <b>Penders<br />
+              (instrument supplies only)<br />
+              314 S. Old Street<br />
+              Pretty, TX 75348<br />
+              (940) 382-7124<br />
+              http://www.penders.com<br /></b>
+              <br /><br />
+              Links to Recordings:<br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=17s">Flute</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=88s">Oboe</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=202s">Clarinet</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=330s">Saxophone</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=417s">Bassoon</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=506s">Trumpet</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=612s">French Horn</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=767s">Trombone</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=916s">Euphonium</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=1027s">Tuba</a><br />
+              <a href="https://www.youtube.com/watch?v=CCTeSjpDsIs&t=1123s">Percussion</a><br />
+            </p>
+          </div>
+
+          <div id="planGuideContent" class="container" style="display:none; color:white">
+            <p>
+              •	STEP 1 – Sign up for Band as your first elective choice when choosing your courses<br />
+              This is the most important step and the easiest to make. When you place Band as your first elective choice, this ensures that you will have a spot in the beginning band class. If you didn’t enroll in the beginning band class… No Worries! You can attend a Try-the-instrument event (see step 2) and change your schedule later on. There is no need to decide what instrument you are playing, yet… that comes next.<br /><br />
+              •	STEP 2 – Attend a “Band Instrument Test Drive” Event<br />
+              Get ready for a fun time!!! This is the time that the student sits down with a band director and is able to try any instrument that they want to. During this session, the assigned band director(s) guide the student through the band instruments and make suggestions based on finger dexterity, face and teeth structure, grades, and experience. By the end of this short session, the student will walk away in most instances knowing what instrument is the best fit for them. If the student is interested in percussion, there will be a separate assessment date due to the large amount of interest. Dates for the selection process are in the Calendar Section.<br /><br />
+              •	STEP 3 – Attend the Beginning Band Parent Night & Instrument Drive<br />
+              This important event will serve two purposes. The first is to offer information to the parents/guardians of all students signed up for a Podonk East Beginning Band Class. We will discuss the schedule, supplies, expectations and what to expect throughout the year (events, concerts, contests, etc.). The second purpose is to provide parents the opportunity to speak with various recommended music store vendors concerning instrument rental and supplies. When working with a recommended vendor, they will have our supply list and be able to offer package deals at competitive prices.<br /><br />
+              •	STEP 4 – Rent/Purchase the instrument and supplies<br />
+              We highly recommend that parents choose to sign up for a rent-to-own program through our recommended vendors for the first year. This will help ensure that the student is responsible and dedicated to their chosen instrument before an instrument is purchased. Music Stores will also offer instrument repair supplements to cover the costs of any repairs needed while being rented. We highly encourage to take advantage of this during the student’s first year, as they are not only learning how to play the instrument but also how to take care of the instrument. Accidents occur which can be costly!<br /><br />
+              •	STEP 5 – Show up to Band Class<br />
+              Now the fun REALLY begins! This will be the most rewarding time, full of challenges, experiences and FUN!
+            </p>
+          </div>
+
+          <div id="highschoolContent" class="container" style="display:none; text-align:center; color:white">
+            <h2>
+              Since opening its doors in 500 BCE, the Podonk Band has grown to become one of the most respected high school bands in the world.
+            </h2>
+            <br /><br />
+            <p>
+              <b>MISSION STATEMENT</b><br /><br />
+              <i>The mission of the Podonk Band is to achieve the highest standards of music education and music performance; facilitate the musical enrichment of the student membership of Podonk High and its feeder schools; promote the place and value
+              of music in our community and the significant role music plays in the cultural, intellectual, and social lives of young adults; foster fellowship and goodwill among its members; and provide its membership with opportunities for personal growth and leadership.</i><br /><br /><br />
+              <b>GENERAL INFORMATION</b><br /><br />
+              Podonk High School is located in Podonk, Texas and is a part of the Podonk Independent School District. The Podonk Band currently serves 6000+ students who participate in marching band, four concert bands, large and small chamber ensembles, and color guard.
+              The middle school feeder programs for the Podonk Band are Podonk East, Podonk West, and Podonk South-by-Southwest. The Podonk Band thrives on its strong booster, administrative, and community support.<br /><br /><br />
+              <b>INCOMING MEMBERS FAQ</b><br /><br />
+              I’m moving in to the district and don’t have a Google Classroom account, where can I get information?<br /><br />
+              Fill out our Move-in information form and we’ll be able to get you caught up on how to transition into the Prosper Band.<br /><br />
+              What if I have a schedule conflict during any of the camps?<br /><br />
+              Fill out an Absence Request Form with corresponding dates and information.<br /><br />
+              Where can I find more information about Guard?<br /><br />
+              Here is the link to our Podonk East Guard page.<br /><br />
+              What classes do I sign up for?<br /><br />
+              Sign-up for a Concert Band course. Following Placement Auditions, we will submit the correct class schedule to the counseling office. All students that are placed in the top two ensembles are required to sign up for the Applied Music Class as well. If you are in Guard, sign up for the Color Guard course.<br /><br />
+              What are the fees for the 2020-21 school year?<br /><br />
+              A deposit of $200 is currently due for all members of the band program. The remainder $600 can be paid in full in August or you can contact our treasurer to arrange a payment plan. Online payments can be made here.<br /><br />
+              I couldn’t make it to the ‘Band 101’ meeting, what did I miss?<br /><br />
+              Click here for our slideshow presentation<br /><br />
+              When does Band Camp start?<br /><br />
+              Download the sample summer calendar overview here<br /><br />
+            </p>
+          </div>
+
+          <div id="calenderContent" class="container" style="display:none">
+            <h2 style="color:white">Event Calender</h2>
+            <h5 style="color:white">Due to current circumstances, we are only able to offer a limited number of events for this upcoming calendar year, which can be found below:</h5>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Event Name</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Podunk Elementary Winter Tour</td>
+                  <td>December 10th, 2020</td>
+                  <td>11:00 A.M. - 1:30 P.M.</td>
+                </tr>
+                <tr>
+                  <td>Winter Concert - Love at Frost Sight</td>
+                  <td>December 17th, 2020</td>
+                  <td>7:30 P.M. - 9:00 P.M.</td>
+                </tr>
+                <tr>
+                  <td>Prospective Member Parent Meeting</td>
+                  <td>January 14th/25th, 2021</td>
+                  <td>7:00 P.M. - 8:00 P.M.</td>
+                </tr>
+                <tr>
+                  <td>Instrument Selection Days</td>
+                  <td>Febuary 1st-5th, 2021</td>
+                  <td>7:00 A.M. - 4:00 P.M.</td>
+                </tr>
+                <tr>
+                  <td>Future Member Meeting & Instrument Purchase</td>
+                  <td>April 7th, 2021</td>
+                  <td>7:00 P.M. - 9:00 P.M.</td>
+                </tr>
+                <tr>
+                  <td>Spring Concert - Bees Have Knees?!</td>
+                  <td>April 22nd, 2021</td>
+                  <td>7:30 P.M. - 9:30 P.M.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+          <div style="padding:3%; background-color:rgb(100, 0, 0); color:white; margin-right:4%; border-radius:4px">
+            <h4 style="text-align:center">Contact Us</h4>
+            <br />
+            <p><b>Rick Sanchez, Director of Bands:</b></p>
+            <p>Phone: (817)-746-3691 ext. 432</p>
+            <p>Cell: (214)-837-8439</p>
+            <p>Email: rick.sanchez@podonkisd.net</p>
+            <br />
+            <p><b>BoJack Horseman, Associate Director:</b></p>
+            <p>Phone: (817)-245-8104 ext. 592</p>
+            <p>Cell: (214)-482-8439</p>
+            <p>Email: BoJack.horseman@podonkisd.net</p>
+            <br />
+            <p><b>Chad Beebe, Director of Percussion Studies:</b></p>
+            <p>Phone: (817)-839-1740 ext. 703</p>
+            <p>Cell: (849)-849-1839</p>
+            <p>Email: chad.beebe@podonkisd.net</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let about = document.getElementById("aboutContent")
+    let lessons = document.getElementById("lessonContent")
+    let resources = document.getElementById("resourcesContent")
+    let calender = document.getElementById("calenderContent")
+    let futureMembers = document.getElementById("futureMembersContent")
+    let highschool = document.getElementById("highschoolContent")
+    let ensembles = document.getElementById("ensemblesContent")
+    let directors = document.getElementById("directorsContent")
+    let guide = document.getElementById("planGuideContent")
+
+    let homeTab = document.getElementById("navbarDropdown")
+    let aboutTab = document.getElementById("about")
+    let ensemblesTab = document.getElementById("ensembles")
+    let directorsTab = document.getElementById("directors")
+    let lessonTab = document.getElementById("lessons")
+    let resourcesTab = document.getElementById("resources")
+    let calenderTab = document.getElementById("calender")
+    let futureMembersTab = document.getElementById("futureDropdown")
+    let highschoolTab = document.getElementById("highschool")
+
+    function showAbout(){
+      lessons.style.display = "none"
+      calender.style.display = "none"
+      resources.style.display = "none"
+      futureMembers.style.display = "none"
+      highschool.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      guide.style.display = "none"
+      about.style.display = "block"
+
+      homeTab.className = "nav-link active dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showEnsembles(){
+      about.style.display = "none"
+      ensembles.style.display = "inline"
+      directors.style.display = "none"
+      calender.style.display = "none"
+      futureMembers.style.display = "none"
+      guide.style.display = "none"
+      highschool.style.display = "none"
+      resources.style.display = "none"
+      lessons.style.display = "none"
+
+      homeTab.className = "nav-link active dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showDirectors(){
+      about.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "block"
+      calender.style.display = "none"
+      guide.style.display = "none"
+      futureMembers.style.display = "none"
+      highschool.style.display = "none"
+      resources.style.display = "none"
+      lessons.style.display = "none"
+
+      homeTab.className = "nav-link active dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showLessons(){
+      about.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      calender.style.display = "none"
+      guide.style.display = "none"
+      futureMembers.style.display = "none"
+      highschool.style.display = "none"
+      resources.style.display = "none"
+      lessons.style.display = "inline"
+
+      homeTab.className = "nav-link dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link active"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showResources(){
+      about.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      calender.style.display = "none"
+      guide.style.display = "none"
+      futureMembers.style.display = "none"
+      highschool.style.display = "none"
+      resources.style.display = "inline"
+      lessons.style.display = "none"
+
+      homeTab.className = "nav-link active dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showFutureMembers(){
+      lessons.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      guide.style.display = "none"
+      resources.style.display = "none"
+      calender.style.display = "none"
+      highschool.style.display = "none"
+      futureMembers.style.display = "inline"
+      about.style.display = "none"
+
+      homeTab.className = "nav-link dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link active dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showGuide(){
+      lessons.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      guide.style.display = "inline"
+      resources.style.display = "none"
+      calender.style.display = "none"
+      highschool.style.display = "none"
+      futureMembers.style.display = "none"
+      about.style.display = "none"
+
+      homeTab.className = "nav-link dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link active dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showHighschool(){
+      lessons.style.display = "none"
+      resources.style.display = "none"
+      calender.style.display = "none"
+      guide.style.display = "none"
+      highschool.style.display = "inline"
+      futureMembers.style.display = "none"
+      about.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+
+      homeTab.className = "nav-link dropdown-toggle"
+      calenderTab.className = "nav-link"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link active"
+      resourcesTab.className = "nav-link"
+    }
+
+    function showCalender(){
+      lessons.style.display = "none"
+      about.style.display = "none"
+      ensembles.style.display = "none"
+      directors.style.display = "none"
+      guide.style.display = "none"
+      resources.style.display = "none"
+      futureMembers.style.display = "none"
+      highschool.style.display = "none"
+      calender.style.display = "inline"
+
+      homeTab.className = "nav-link dropdown-toggle"
+      calenderTab.className = "nav-link active"
+      lessonTab.className = "nav-link"
+      futureMembersTab.className = "nav-link dropdown-toggle"
+      highschoolTab.className = "nav-link"
+      resourcesTab.className = "nav-link"
+    }
+
+  </script>
+
+</body>
+</html>
